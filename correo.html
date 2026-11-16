@@ -4,265 +4,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Centro de seguridad | NetSec</title>
-
-    <link rel="stylesheet" href="css/estilos.css">
+    <meta name="description" content="Ejercicio académico de análisis de seguridad del correo electrónico.">
+    <title>Correo de prueba | NetSec Lab</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
-
 <body>
 
-    <!-- ENCABEZADO -->
-    <header class="header">
-        <div class="logo">
-            <span class="logo-icon">N</span>
-            <div class="logo-text">
-                <strong>NETSEC</strong>
-                <small>SECURITY CENTER</small>
-            </div>
-        </div>
+<header class="navbar">
+    <a href="index.html" class="brand">
+        <span class="brand-icon">N</span>
+        <span>NETSEC <small>LAB</small></span>
+    </a>
 
-        <nav class="navigation">
-            <a href="index.html">Inicio</a>
-            <a href="#notificacion">Notificaciones</a>
-            <a href="#detalles">Seguridad</a>
-        </nav>
+    <nav class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="index.html#laboratorio">Laboratorio</a>
+        <a href="index.html#nosotros">Acerca de</a>
+    </nav>
 
-        <div class="header-right">
-            <span class="status">
-                <span class="status-dot"></span>
-                Servicio disponible
-            </span>
-        </div>
-    </header>
+    <span class="status">
+        <span class="status-dot"></span>
+        Entorno académico
+    </span>
+</header>
 
-
-    <!-- AVISO SUPERIOR -->
-    <div class="security-topbar">
-        <span class="security-topbar-icon">!</span>
-        <span>Centro de seguridad · Aviso de actividad reciente</span>
+<section class="inner-hero">
+    <div class="breadcrumb">
+        <a href="index.html">Inicio</a> /
+        <a href="index.html#laboratorio">Laboratorio</a> /
+        Correo electrónico
     </div>
 
+    <span class="eyebrow">PRÁCTICA 01 / SEGURIDAD DEL CORREO</span>
 
-    <main class="security-alert-page">
+    <h1>Simulación de correo electrónico</h1>
 
-        <!-- MIGAS DE PAN -->
-        <div class="breadcrumb">
-            Inicio <span>›</span> Seguridad <span>›</span>
-            Actividad de la cuenta
+    <p>
+        Examina el siguiente mensaje e identifica los elementos
+        que podrían representar un riesgo de seguridad.
+    </p>
+</section>
+
+<main class="email-section">
+
+    <div class="email-card">
+
+        <div class="email-top">
+            <h2>Mensaje recibido</h2>
+
+            <div class="email-meta">
+                <p><strong>De:</strong> Notificaciones de seguridad &lt;avisos@netsec-lab.test&gt;</p>
+                <p><strong>Para:</strong> Usuario de prueba</p>
+                <p><strong>Asunto:</strong> Aviso de revisión de seguridad de cuenta</p>
+                <p><strong>Fecha:</strong> 16 de noviembre de 2026</p>
+            </div>
         </div>
 
+        <div class="email-body">
 
-        <!-- TITULO -->
-        <section class="alert-heading" id="notificacion">
+            <h3>Notificación de seguridad</h3>
 
-            <div class="alert-heading-icon">!</div>
-
-            <div>
-                <span class="alert-category">
-                    NOTIFICACIÓN DE SEGURIDAD
-                </span>
-
-                <h1>Se detectó actividad inusual en tu cuenta</h1>
-
-                <p>
-                    Hemos identificado un intento de acceso que
-                    requiere tu atención.
-                </p>
-            </div>
-
-        </section>
-
-
-        <!-- TARJETA PRINCIPAL -->
-        <section class="account-alert">
-
-            <div class="account-alert-header">
-                <div>
-                    <span class="mini-label">CENTRO DE NOTIFICACIONES</span>
-                    <h2>Alerta de actividad de inicio de sesión</h2>
-                </div>
-
-                <span class="alert-status">ATENCIÓN REQUERIDA</span>
-            </div>
-
-
-            <div class="account-alert-body">
-
-                <div class="alert-message-icon">!</div>
-
-                <div class="alert-message-content">
-
-                    <h3>¿Fuiste tú quien intentó iniciar sesión?</h3>
-
-                    <p>
-                        Se registró un intento de acceso a tu cuenta
-                        desde un dispositivo que no había sido
-                        identificado anteriormente.
-                    </p>
-
-                    <p>
-                        Si reconoces esta actividad, puedes ignorar
-                        esta notificación. Si no la reconoces,
-                        revisa los detalles del evento.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- DATOS DEL EVENTO -->
-            <div class="event-details">
-
-                <h3>Detalles del evento</h3>
-
-                <div class="event-row">
-                    <span>Tipo de actividad</span>
-                    <strong>Intento de inicio de sesión</strong>
-                </div>
-
-                <div class="event-row">
-                    <span>Dispositivo</span>
-                    <strong>Windows · Navegador web</strong>
-                </div>
-
-                <div class="event-row">
-                    <span>Ubicación aproximada</span>
-                    <strong>Ciudad de México, México</strong>
-                </div>
-
-                <div class="event-row">
-                    <span>Fecha y hora</span>
-                    <strong>16 de noviembre de 2026 · 16:48</strong>
-                </div>
-
-                <div class="event-row">
-                    <span>Estado</span>
-                    <strong class="event-warning">
-                        Actividad pendiente de revisión
-                    </strong>
-                </div>
-
-            </div>
-
-
-            <!-- ACCIÓN -->
-            <div class="alert-actions">
-
-                <a href="#detalles" class="security-action">
-                    Revisar actividad de la cuenta
-                    <span>→</span>
-                </a>
-
-                <p>
-                    No compartas códigos de verificación ni
-                    contraseñas con terceros.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- INFORMACIÓN ADICIONAL -->
-        <section class="security-help">
-
-            <div class="help-icon">i</div>
-
-            <div>
-                <h3>Protege tu cuenta</h3>
-
-                <p>
-                    Mantén actualizados tus métodos de seguridad
-                    y revisa periódicamente los dispositivos
-                    vinculados a tus cuentas.
-                </p>
-            </div>
-
-        </section>
-
-
-        <!-- ÁREA DE ANÁLISIS -->
-        <section class="review-section" id="detalles">
-
-            <span class="tag">INFORMACIÓN DEL EVENTO</span>
-
-            <h2>Revisión de actividad</h2>
+            <p>Hola, usuario:</p>
 
             <p>
-                Observa los detalles de la notificación y determina
-                si existen elementos que requieren una verificación
-                adicional antes de confiar en el mensaje.
+                Se ha generado una notificación relacionada con
+                la revisión de seguridad de tu cuenta.
             </p>
 
-            <div class="review-grid">
+            <p>
+                Es importante prestar atención a los avisos que
+                informan sobre movimientos o cambios inesperados
+                en los servicios digitales.
+            </p>
 
-                <article>
-                    <strong>01</strong>
-                    <h3>Origen del aviso</h3>
-                    <p>
-                        Comprueba quién envía la notificación y
-                        verifica que su identidad sea legítima.
-                    </p>
-                </article>
+            <div class="email-notice">
+                <strong>Información de seguridad</strong>
+                <p>
+                    Antes de realizar cualquier acción, verifica
+                    la procedencia del mensaje y confirma que el
+                    remitente pertenezca realmente a la organización
+                    correspondiente.
+                </p>
+            </div>
 
-                <article>
-                    <strong>02</strong>
-                    <h3>Actividad registrada</h3>
-                    <p>
-                        Analiza si reconoces el dispositivo,
-                        la ubicación y la hora indicados.
-                    </p>
-                </article>
+            <p>
+                Revisa cuidadosamente el contenido del mensaje y
+                analiza si existen elementos que puedan representar
+                un riesgo para tu información.
+            </p>
 
-                <article>
-                    <strong>03</strong>
-                    <h3>Acciones solicitadas</h3>
-                    <p>
-                        Desconfía de enlaces inesperados y evita
-                        compartir información confidencial.
-                    </p>
-                </article>
+            <button class="email-link" id="analyzeButton" type="button">
+                Revisar señales de seguridad →
+            </button>
 
-                <article>
-                    <strong>04</strong>
-                    <h3>Verificación</h3>
-                    <p>
-                        Accede a tus servicios escribiendo
-                        directamente su dirección oficial.
-                    </p>
-                </article>
+            <div class="email-analysis" id="analysis">
+
+                <h3>¿Qué debes observar?</h3>
+
+                <ul>
+                    <li>
+                        <strong>01. Remitente:</strong>
+                        Comprueba si la dirección pertenece realmente
+                        a la organización que dice representar.
+                    </li>
+
+                    <li>
+                        <strong>02. Asunto:</strong>
+                        Identifica si el mensaje utiliza preocupación
+                        o urgencia para llamar tu atención.
+                    </li>
+
+                    <li>
+                        <strong>03. Enlaces:</strong>
+                        Comprueba el destino de los enlaces antes
+                        de abrirlos.
+                    </li>
+
+                    <li>
+                        <strong>04. Información:</strong>
+                        Desconfía de mensajes que soliciten información
+                        personal o confidencial.
+                    </li>
+
+                    <li>
+                        <strong>05. Dominio:</strong>
+                        Verifica que el dominio del remitente corresponda
+                        al sitio oficial de la organización.
+                    </li>
+                </ul>
+
+                <div class="email-notice">
+                    <strong>Recomendación:</strong>
+                    Nunca proporciones contraseñas ni datos bancarios
+                    a través de enlaces recibidos por correo electrónico.
+                </div>
+
+                <p>
+                    Este ejercicio permite reconocer características
+                    comunes de los correos fraudulentos y fortalecer
+                    los hábitos de seguridad digital.
+                </p>
 
             </div>
 
-            <a href="index.html" class="back-link">
-                ← Volver al inicio
-            </a>
-
-        </section>
-
-    </main>
-
-
-    <!-- PIE DE PÁGINA -->
-    <footer class="footer">
-
-        <div class="footer-brand">
-            <strong>NETSEC LAB</strong>
-            <span>Cybersecurity Awareness</span>
         </div>
 
-        <p>
-            Plataforma académica de concientización sobre
-            seguridad digital.
-        </p>
+        <div class="email-footer">
+            <h3>NETSEC LAB</h3>
+            <p>Cybersecurity Awareness</p>
+            <p>Laboratorio académico de seguridad digital</p>
+        </div>
 
-        <p class="footer-copy">
-            © 2026 NetSec Lab. Todos los derechos reservados.
-        </p>
+    </div>
 
-    </footer>
+    <div style="margin-top:25px;">
+        <a href="index.html" class="btn btn-outline">
+            ← Volver al laboratorio
+        </a>
+    </div>
 
+</main>
+
+<footer class="footer">
+    <a href="index.html" class="brand footer-brand">
+        <span class="brand-icon">N</span>
+        <span>NETSEC <small>LAB</small></span>
+    </a>
+
+    <p>Cybersecurity Awareness | Proyecto académico</p>
+    <small>© <span id="year"></span> NetSec Lab. Todos los derechos reservados.</small>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
