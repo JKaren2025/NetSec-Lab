@@ -1,128 +1,35 @@
 
-// ==========================================
-// NETSEC LAB - INTERACCIONES
-// ==========================================
+document.addEventListener("DOMContentLoaded", function () {
 
-const notificationButton = document.getElementById(
-    "notificationButton"
-);
+    // Actualizar año automáticamente
+    const year = document.getElementById("year");
 
-const announcement = document.getElementById(
-    "announcement"
-);
+    if (year) {
+        year.textContent = new Date().getFullYear();
+    }
 
-const readMoreBtn = document.getElementById(
-    "readMoreBtn"
-);
+    // Mostrar u ocultar análisis del correo
+    const analyzeButton = document.getElementById("analyzeButton");
+    const analysis = document.getElementById("analysis");
 
-const closeAnnouncement = document.getElementById(
-    "closeAnnouncement"
-);
+    if (analyzeButton && analysis) {
 
-const securityModal = document.getElementById(
-    "securityModal"
-);
+        analyzeButton.addEventListener("click", function () {
 
-const closeModal = document.getElementById(
-    "closeModal"
-);
+            analysis.classList.toggle("visible");
 
-const dismissModal = document.getElementById(
-    "dismissModal"
-);
+            if (analysis.classList.contains("visible")) {
+                analyzeButton.textContent = "Ocultar análisis ↑";
+                analysis.scrollIntoView({
+                    behavior: "smooth",
+                    block: "nearest"
+                });
+            } else {
+                analyzeButton.textContent = "Revisar señales de seguridad →";
+            }
 
-const reviewActivity = document.getElementById(
-    "reviewActivity"
-);
-
-
-// ==========================================
-// ABRIR NOTIFICACIONES
-// ==========================================
-
-notificationButton.addEventListener("click", () => {
-
-    announcement.classList.toggle("active");
-
-    if (announcement.classList.contains("active")) {
-        announcement.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
         });
+
     }
 
 });
-
-
-// ==========================================
-// CERRAR BARRA DE ACTUALIZACIONES
-// ==========================================
-
-closeAnnouncement.addEventListener("click", () => {
-
-    announcement.classList.remove("active");
-
-});
-
-
-// ==========================================
-// ABRIR AVISO DE SEGURIDAD
-// ==========================================
-
-readMoreBtn.addEventListener("click", () => {
-
-    securityModal.classList.add("active");
-
-});
-
-
-// ==========================================
-// CERRAR VENTANA
-// ==========================================
-
-function closeSecurityModal() {
-
-    securityModal.classList.remove("active");
-
-}
-
-closeModal.addEventListener("click", closeSecurityModal);
-
-dismissModal.addEventListener("click", closeSecurityModal);
-
-
-// Cerrar al pulsar fuera de la ventana
-
-securityModal.addEventListener("click", (event) => {
-
-    if (event.target === securityModal) {
-        closeSecurityModal();
-    }
-
-});
-
-
-// ==========================================
-// CONTINUAR A LA REVISIÓN EDUCATIVA
-// ==========================================
-
-reviewActivity.addEventListener("click", () => {
-
-    window.location.href = "correo.html";
-
-});
-
-
-// ==========================================
-// CERRAR CON ESCAPE
-// ==========================================
-
-document.addEventListener("keydown", (event) => {
-
-    if (event.key === "Escape") {
-        closeSecurityModal();
-        announcement.classList.remove("active");
-    }
-
-});
-
