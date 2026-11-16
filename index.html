@@ -1,0 +1,458 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="NetSec Lab, plataforma educativa de aprendizaje y concientización sobre ciberseguridad.">
+
+    <title>NetSec Lab | Aprende y protege tu entorno digital</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- BARRA DE ACTUALIZACIONES -->
+    <div class="announcement" id="announcement">
+
+        <div class="announcement-content">
+            <strong>Actualizaciones</strong>
+
+            <p>
+                Mantente informado sobre las novedades y recomendaciones
+                para proteger tu cuenta y tu información digital.
+            </p>
+        </div>
+
+        <div class="announcement-actions">
+            <button id="readMoreBtn" class="read-more">
+                Leer más
+            </button>
+
+            <span class="announcement-count">1/1</span>
+
+            <button class="close-announcement" id="closeAnnouncement"
+                    aria-label="Cerrar actualización">
+                ×
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- ENCABEZADO PRINCIPAL -->
+    <header class="header">
+
+        <a href="#inicio" class="brand">
+
+            <span class="brand-name">
+                NetSec
+                <strong>Lab</strong>
+            </span>
+
+            <small>CYBERSECURITY ACADEMY</small>
+
+        </a>
+
+
+        <nav class="main-navigation">
+
+            <a href="#temas" class="explore-button">
+                <span class="grid-icon">▦</span>
+                Explorar
+                <span>⌄</span>
+            </a>
+
+        </nav>
+
+
+        <div class="search-box">
+
+            <span class="search-icon">⌕</span>
+
+            <input type="search"
+                   placeholder="Búsqueda de cursos, artículos y recursos">
+
+            <select aria-label="Tipo de usuario">
+                <option>Estudiante</option>
+                <option>Docente</option>
+            </select>
+
+        </div>
+
+
+        <nav class="right-navigation">
+
+            <a href="#aprendizaje" class="my-learning">
+                Mi aprendizaje
+            </a>
+
+            <button class="language-button" aria-label="Idioma">
+                ◎ <span>ES</span>
+            </button>
+
+            <button class="help-button" aria-label="Ayuda">
+                ?
+            </button>
+
+            <!-- CAMPANITA -->
+            <button class="notification-button"
+                    id="notificationButton"
+                    aria-label="Notificaciones">
+
+                <svg viewBox="0 0 24 24"
+                     width="25"
+                     height="25"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="1.7">
+
+                    <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/>
+                    <path d="M10 21h4"/>
+
+                </svg>
+
+                <span class="notification-dot"></span>
+
+            </button>
+
+
+            <div class="profile">
+
+                <div class="profile-avatar">N</div>
+
+                <div class="profile-text">
+                    <strong>Estudiante</strong>
+                    <small>NetSec Lab</small>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CONTENIDO -->
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <div class="featured-message">
+
+                    <span class="fire-icon">🔥</span>
+
+                    <div>
+                        <strong>
+                            La seguridad digital comienza con el conocimiento
+                        </strong>
+
+                        <p>
+                            Descubre recursos gratuitos para desarrollar
+                            tus habilidades en
+                            <a href="#temas">ciberseguridad.</a>
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <h1>
+                    Desarrolle sus habilidades.
+                    <br>
+                    Desarrolle su futuro.
+                </h1>
+
+
+                <p class="hero-description">
+                    Aprende sobre ciberseguridad, protección de datos,
+                    amenazas digitales y seguridad informática.
+                    Desarrolla habilidades para navegar de manera
+                    responsable y segura en el mundo digital.
+                </p>
+
+
+                <p class="hero-question">
+                    ¿Está listo para comenzar a fortalecer sus conocimientos?
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="#temas" class="button-primary">
+                        Comenzar a aprender
+                    </a>
+
+                    <a href="#temas" class="button-outline">
+                        Explorar los temas
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- COLLAGE DE IMÁGENES -->
+            <div class="hero-gallery">
+
+                <div class="gallery-main">
+                    <img
+                        src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=700"
+                        alt="Estudiante participando en una actividad tecnológica">
+                </div>
+
+                <div class="gallery-top">
+                    <img
+                        src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=600"
+                        alt="Equipo de estudiantes trabajando en tecnología">
+                </div>
+
+                <div class="gallery-bottom">
+                    <img
+                        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600"
+                        alt="Persona aprendiendo mediante una computadora">
+                </div>
+
+                <div class="gallery-dots"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ESTADÍSTICAS -->
+        <section class="statistics" id="aprendizaje">
+
+            <div class="stat-item">
+                <strong>100%</strong>
+                <p>Aprendizaje digital</p>
+            </div>
+
+            <div class="stat-item">
+                <strong>24/7</strong>
+                <p>Acceso a los recursos</p>
+            </div>
+
+            <div class="stat-item">
+                <strong>03</strong>
+                <p>Áreas de aprendizaje</p>
+            </div>
+
+            <div class="stat-item">
+                <strong>01</strong>
+                <p>Objetivo: navegar seguro</p>
+            </div>
+
+            <div class="stat-item">
+                <strong>∞</strong>
+                <p>Oportunidades para aprender</p>
+            </div>
+
+        </section>
+
+
+        <!-- TEMAS -->
+        <section class="learning-section" id="temas">
+
+            <div class="section-heading">
+
+                <span>DESCUBRE Y APRENDE</span>
+
+                <h2>
+                    Explore nuestros temas de aprendizaje
+                </h2>
+
+                <p>
+                    Fortalece tus conocimientos y descubre cómo
+                    proteger tu información en internet.
+                </p>
+
+            </div>
+
+
+            <div class="learning-grid">
+
+                <article class="learning-card">
+
+                    <div class="learning-icon blue-icon">✉</div>
+
+                    <span>01 · SEGURIDAD DIGITAL</span>
+
+                    <h3>Correos y mensajes sospechosos</h3>
+
+                    <p>
+                        Aprende a identificar señales de alerta
+                        en mensajes y comunicaciones digitales.
+                    </p>
+
+                    <a href="correo.html">
+                        Explorar contenido →
+                    </a>
+
+                </article>
+
+
+                <article class="learning-card">
+
+                    <div class="learning-icon green-icon">◈</div>
+
+                    <span>02 · PROTECCIÓN</span>
+
+                    <h3>Protección de cuentas</h3>
+
+                    <p>
+                        Conoce las medidas necesarias para
+                        mantener protegidas tus cuentas digitales.
+                    </p>
+
+                    <a href="#informacion">
+                        Conocer más →
+                    </a>
+
+                </article>
+
+
+                <article class="learning-card">
+
+                    <div class="learning-icon orange-icon">⌑</div>
+
+                    <span>03 · CONCIENTIZACIÓN</span>
+
+                    <h3>Amenazas informáticas</h3>
+
+                    <p>
+                        Identifica los riesgos más comunes
+                        y aprende a prevenirlos.
+                    </p>
+
+                    <a href="#informacion">
+                        Conocer más →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- INFORMACIÓN -->
+        <section class="information-section" id="informacion">
+
+            <div>
+                <span>SEGURIDAD PARA TODOS</span>
+
+                <h2>
+                    El conocimiento es tu primera línea de defensa.
+                </h2>
+
+                <p>
+                    La ciberseguridad no depende únicamente de la tecnología.
+                    También depende de nuestras decisiones y de la capacidad
+                    para reconocer situaciones que puedan comprometer
+                    nuestra información.
+                </p>
+            </div>
+
+            <div class="information-graphic">
+                <div class="graphic-circle">
+                    <span>✓</span>
+                </div>
+
+                <strong>THINK BEFORE YOU CLICK</strong>
+                <small>PREVENCIÓN · CONOCIMIENTO · SEGURIDAD</small>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+
+        <div class="footer-brand">
+            <strong>NetSec Lab</strong>
+            <span>Cybersecurity Academy</span>
+        </div>
+
+        <p>
+            Plataforma académica de aprendizaje y concientización
+            sobre ciberseguridad.
+        </p>
+
+        <small>
+            © 2026 NetSec Lab. Proyecto educativo.
+        </small>
+
+    </footer>
+
+
+    <!-- VENTANA DE NOTIFICACIÓN -->
+    <div class="modal-overlay" id="securityModal">
+
+        <div class="notification-modal">
+
+            <div class="modal-heading">
+                <h2>Actualizaciones</h2>
+
+                <button id="closeModal" aria-label="Cerrar">
+                    ×
+                </button>
+            </div>
+
+            <div class="security-notice">
+
+                <span class="notice-symbol">!</span>
+
+                <div>
+                    <strong>Actividad de cuenta</strong>
+
+                    <p>
+                        Se ha detectado un intento de inicio de sesión
+                        desde un dispositivo que no reconocemos.
+                    </p>
+                </div>
+
+            </div>
+
+            <p class="modal-description">
+                Por seguridad, te recomendamos revisar la actividad
+                reciente de tu cuenta y verificar si reconoces
+                el acceso registrado.
+            </p>
+
+            <button class="modal-link" id="reviewActivity">
+                Revisar actividad de la cuenta
+            </button>
+
+            <div class="modal-actions">
+
+                <button id="dismissModal" class="modal-close-button">
+                    Cerrar
+                </button>
+
+            </div>
+
+            <div class="modal-footer">
+                NetSec Lab · Centro de aprendizaje digital
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

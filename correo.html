@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Centro de seguridad | NetSec</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+        <div class="logo">
+            <span class="logo-icon">N</span>
+            <div class="logo-text">
+                <strong>NETSEC</strong>
+                <small>SECURITY CENTER</small>
+            </div>
+        </div>
+
+        <nav class="navigation">
+            <a href="index.html">Inicio</a>
+            <a href="#notificacion">Notificaciones</a>
+            <a href="#detalles">Seguridad</a>
+        </nav>
+
+        <div class="header-right">
+            <span class="status">
+                <span class="status-dot"></span>
+                Servicio disponible
+            </span>
+        </div>
+    </header>
+
+
+    <!-- AVISO SUPERIOR -->
+    <div class="security-topbar">
+        <span class="security-topbar-icon">!</span>
+        <span>Centro de seguridad · Aviso de actividad reciente</span>
+    </div>
+
+
+    <main class="security-alert-page">
+
+        <!-- MIGAS DE PAN -->
+        <div class="breadcrumb">
+            Inicio <span>›</span> Seguridad <span>›</span>
+            Actividad de la cuenta
+        </div>
+
+
+        <!-- TITULO -->
+        <section class="alert-heading" id="notificacion">
+
+            <div class="alert-heading-icon">!</div>
+
+            <div>
+                <span class="alert-category">
+                    NOTIFICACIÓN DE SEGURIDAD
+                </span>
+
+                <h1>Se detectó actividad inusual en tu cuenta</h1>
+
+                <p>
+                    Hemos identificado un intento de acceso que
+                    requiere tu atención.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- TARJETA PRINCIPAL -->
+        <section class="account-alert">
+
+            <div class="account-alert-header">
+                <div>
+                    <span class="mini-label">CENTRO DE NOTIFICACIONES</span>
+                    <h2>Alerta de actividad de inicio de sesión</h2>
+                </div>
+
+                <span class="alert-status">ATENCIÓN REQUERIDA</span>
+            </div>
+
+
+            <div class="account-alert-body">
+
+                <div class="alert-message-icon">!</div>
+
+                <div class="alert-message-content">
+
+                    <h3>¿Fuiste tú quien intentó iniciar sesión?</h3>
+
+                    <p>
+                        Se registró un intento de acceso a tu cuenta
+                        desde un dispositivo que no había sido
+                        identificado anteriormente.
+                    </p>
+
+                    <p>
+                        Si reconoces esta actividad, puedes ignorar
+                        esta notificación. Si no la reconoces,
+                        revisa los detalles del evento.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- DATOS DEL EVENTO -->
+            <div class="event-details">
+
+                <h3>Detalles del evento</h3>
+
+                <div class="event-row">
+                    <span>Tipo de actividad</span>
+                    <strong>Intento de inicio de sesión</strong>
+                </div>
+
+                <div class="event-row">
+                    <span>Dispositivo</span>
+                    <strong>Windows · Navegador web</strong>
+                </div>
+
+                <div class="event-row">
+                    <span>Ubicación aproximada</span>
+                    <strong>Ciudad de México, México</strong>
+                </div>
+
+                <div class="event-row">
+                    <span>Fecha y hora</span>
+                    <strong>16 de noviembre de 2026 · 16:48</strong>
+                </div>
+
+                <div class="event-row">
+                    <span>Estado</span>
+                    <strong class="event-warning">
+                        Actividad pendiente de revisión
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <!-- ACCIÓN -->
+            <div class="alert-actions">
+
+                <a href="#detalles" class="security-action">
+                    Revisar actividad de la cuenta
+                    <span>→</span>
+                </a>
+
+                <p>
+                    No compartas códigos de verificación ni
+                    contraseñas con terceros.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- INFORMACIÓN ADICIONAL -->
+        <section class="security-help">
+
+            <div class="help-icon">i</div>
+
+            <div>
+                <h3>Protege tu cuenta</h3>
+
+                <p>
+                    Mantén actualizados tus métodos de seguridad
+                    y revisa periódicamente los dispositivos
+                    vinculados a tus cuentas.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- ÁREA DE ANÁLISIS -->
+        <section class="review-section" id="detalles">
+
+            <span class="tag">INFORMACIÓN DEL EVENTO</span>
+
+            <h2>Revisión de actividad</h2>
+
+            <p>
+                Observa los detalles de la notificación y determina
+                si existen elementos que requieren una verificación
+                adicional antes de confiar en el mensaje.
+            </p>
+
+            <div class="review-grid">
+
+                <article>
+                    <strong>01</strong>
+                    <h3>Origen del aviso</h3>
+                    <p>
+                        Comprueba quién envía la notificación y
+                        verifica que su identidad sea legítima.
+                    </p>
+                </article>
+
+                <article>
+                    <strong>02</strong>
+                    <h3>Actividad registrada</h3>
+                    <p>
+                        Analiza si reconoces el dispositivo,
+                        la ubicación y la hora indicados.
+                    </p>
+                </article>
+
+                <article>
+                    <strong>03</strong>
+                    <h3>Acciones solicitadas</h3>
+                    <p>
+                        Desconfía de enlaces inesperados y evita
+                        compartir información confidencial.
+                    </p>
+                </article>
+
+                <article>
+                    <strong>04</strong>
+                    <h3>Verificación</h3>
+                    <p>
+                        Accede a tus servicios escribiendo
+                        directamente su dirección oficial.
+                    </p>
+                </article>
+
+            </div>
+
+            <a href="index.html" class="back-link">
+                ← Volver al inicio
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+
+        <div class="footer-brand">
+            <strong>NETSEC LAB</strong>
+            <span>Cybersecurity Awareness</span>
+        </div>
+
+        <p>
+            Plataforma académica de concientización sobre
+            seguridad digital.
+        </p>
+
+        <p class="footer-copy">
+            © 2026 NetSec Lab. Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+</body>
+</html>
