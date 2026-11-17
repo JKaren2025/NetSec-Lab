@@ -1,202 +1,153 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NetSec Lab: laboratorio académico de concientización sobre ciberseguridad.">
-    <title>NetSec Lab | Laboratorio de Ciberseguridad</title>
-    <link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plataforma educativa para aprender sobre ciberseguridad, redes y protección digital.">
+  <title>Academia de Seguridad Digital | Aprende y protege</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-<header class="navbar">
-    <a href="index.html" class="brand">
-        <span class="brand-icon">N</span>
-        <span>NETSEC <small>LAB</small></span>
-    </a>
+  <div class="announcement" id="announcement">
+    <div class="announcement-inner">
+      <span class="announcement-tag">NOVEDAD</span>
+      <p><strong>Aprende a proteger tu vida digital.</strong> Explora actividades prácticas de seguridad y prevención.</p>
+      <a href="#aprendizaje">Conocer más</a>
+      <button class="announcement-close" id="closeAnnouncement" aria-label="Cerrar aviso">×</button>
+    </div>
+  </div>
 
-    <nav class="nav-links">
-        <a href="index.html">Inicio</a>
-        <a href="#laboratorio">Laboratorio</a>
-        <a href="#nosotros">Acerca de</a>
-    </nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="academy-brand" href="index.html" aria-label="Academia de Seguridad Digital, inicio">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        <span class="brand-name">Academia de<br><strong>Seguridad Digital</strong></span>
+      </a>
 
-    <span class="status">
-        <span class="status-dot"></span>
-        Entorno académico
-    </span>
-</header>
+      <button class="mobile-menu-button" id="mobileMenuButton" aria-expanded="false" aria-controls="mainNav">☰<span class="sr-only">Abrir menú</span></button>
 
-<main>
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <a class="nav-explore" href="#aprendizaje"><span class="grid-symbol">▦</span> Explorar <span class="chevron">⌄</span></a>
+        <a href="#aprendizaje">Temas</a>
+        <a href="#recursos">Recursos</a>
+      </nav>
 
-    <section class="hero">
-        <div class="hero-content">
-            <span class="eyebrow">CYBERSECURITY AWARENESS</span>
+      <form class="search-form" id="searchForm" role="search">
+        <label class="sr-only" for="siteSearch">Buscar cursos y recursos</label>
+        <span aria-hidden="true">⌕</span>
+        <input id="siteSearch" type="search" placeholder="Búsqueda de cursos, temas y recursos">
+        <button type="submit" aria-label="Buscar">Buscar</button>
+      </form>
 
-            <h1>Protege tu entorno.<br>
-                <span>Identifica las amenazas.</span>
-            </h1>
-
-            <p>
-                Bienvenido a NetSec Lab, un laboratorio académico diseñado
-                para comprender los riesgos digitales, identificar correos
-                sospechosos y reconocer posibles ataques informáticos.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#laboratorio" class="btn btn-primary">
-                    Explorar laboratorio →
-                </a>
-                <a href="#nosotros" class="btn btn-outline">
-                    Conocer más
-                </a>
+      <div class="header-actions">
+        <a class="learning-link" href="#aprendizaje">Mi aprendizaje</a>
+        <button class="icon-action language-button" type="button" aria-label="Idioma español">◎ <span>ES</span></button>
+        <button class="icon-action help-button" type="button" id="helpButton" aria-label="Ayuda">?</button>
+        <div class="notification-wrap">
+          <button class="icon-action notification-button" type="button" id="notificationButton" aria-expanded="false" aria-controls="notificationPanel" aria-label="Notificaciones">
+            ♧<span class="notification-dot"></span>
+          </button>
+          <div class="notification-panel" id="notificationPanel" hidden>
+            <div class="notification-heading"><strong>Notificaciones</strong><span class="notification-count">1 nueva</span></div>
+            <div class="notification-item">
+              <span class="notification-symbol">!</span>
+              <div><strong>Recomendación de seguridad</strong><p>Revisa las señales de un correo sospechoso en la actividad interactiva.</p><a href="correo.html">Ver actividad →</a></div>
             </div>
+          </div>
+        </div>
+        <button class="profile-button" id="profileButton" type="button">
+          <span class="profile-avatar">E</span><span class="profile-copy"><strong>Estudiante</strong><small>Cuenta de aprendizaje</small></span><span class="chevron">⌄</span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-            <div class="hero-note">
-                <span class="check">✓</span>
-                Simulación educativa en entorno seguro.
-            </div>
+  <main id="contenido">
+    <section class="hero-section">
+      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <div class="hero-pill"><span class="flame">✦</span><span><strong>Aprendizaje para un mundo conectado</strong><br>Conocimientos prácticos para navegar de forma más segura.</span></div>
+          <p class="eyebrow">APRENDE · PRACTICA · PROTÉGETE</p>
+          <h1>Desarrolle sus<br>habilidades.<br><span>Proteja su futuro.</span></h1>
+          <p class="hero-description">Explora conceptos de ciberseguridad, identifica amenazas digitales y desarrolla hábitos para proteger tu información en línea.</p>
+          <p class="hero-question">¿Listo para comenzar a aprender?</p>
+          <div class="hero-buttons">
+            <a class="button button-green" href="#aprendizaje">Comenzar a aprender</a>
+            <a class="button button-outline" href="#temas">Explorar los temas</a>
+          </div>
         </div>
 
-        <div class="hero-visual">
-            <div class="security-card">
-                <span class="visual-label">NETSEC SECURITY</span>
-
-                <div class="shield">
-                    <svg viewBox="0 0 100 110" fill="none">
-                        <path d="M50 5 L91 22 V53 C91 79 73 96 50 106 C27 96 9 79 9 53 V22 Z"
-                              stroke="currentColor" stroke-width="5"/>
-                        <path d="M29 54 L44 69 L73 39"
-                              stroke="currentColor" stroke-width="6"
-                              stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-
-                <h3>Security Awareness</h3>
-                <p>Aprende a reconocer amenazas antes de que representen un riesgo.</p>
-
-                <div class="security-info">
-                    <span class="status-dot"></span>
-                    Protección digital activa
-                </div>
-
-                <small>LEARNING ENVIRONMENT</small>
-            </div>
+        <div class="hero-gallery" aria-label="Personas aprendiendo tecnología">
+          <div class="gallery-photo photo-main"><img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1000&q=85" alt="Estudiantes colaborando en un espacio de aprendizaje" onerror="this.style.display='none'"></div>
+          <div class="gallery-photo photo-top"><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=800&q=85" alt="Equipo trabajando frente a una computadora" onerror="this.style.display='none'"></div>
+          <div class="gallery-photo photo-bottom"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=85" alt="Persona aprendiendo con una computadora portátil" onerror="this.style.display='none'"></div>
+          <span class="gallery-dots dots-one" aria-hidden="true"></span>
+          <span class="gallery-wave" aria-hidden="true">〰</span>
         </div>
+      </div>
     </section>
 
-    <section class="section" id="laboratorio">
-        <div class="section-heading">
-            <span class="eyebrow">NUESTRO LABORATORIO</span>
-            <h2>Explora las prácticas de seguridad</h2>
-            <p>Conoce cómo funcionan algunas amenazas digitales mediante ejercicios controlados.</p>
-        </div>
-
-        <div class="practice-grid">
-
-            <article class="practice-card">
-                <div class="practice-icon blue">✉</div>
-                <span class="practice-number">PRÁCTICA 01</span>
-                <h3>Seguridad del correo electrónico</h3>
-                <p>
-                    Aprende a identificar mensajes sospechosos,
-                    remitentes desconocidos y enlaces potencialmente peligrosos.
-                </p>
-                <a href="correo.html" class="card-link">
-                    Explorar práctica →
-                </a>
-            </article>
-
-            <article class="practice-card">
-                <div class="practice-icon green">⌕</div>
-                <span class="practice-number">PRÁCTICA 02</span>
-                <h3>Análisis de amenazas digitales</h3>
-                <p>
-                    Conoce los principales riesgos que pueden comprometer
-                    la seguridad de la información.
-                </p>
-                <a href="#nosotros" class="card-link">
-                    Conocer más →
-                </a>
-            </article>
-
-            <article class="practice-card">
-                <div class="practice-icon purple">▣</div>
-                <span class="practice-number">PRÁCTICA 03</span>
-                <h3>Protección de información</h3>
-                <p>
-                    Identifica buenas prácticas para proteger tus datos
-                    y mantener seguros tus dispositivos.
-                </p>
-                <a href="#nosotros" class="card-link">
-                    Conocer más →
-                </a>
-            </article>
-
-        </div>
+    <section class="stats-section" aria-label="Resumen de la plataforma">
+      <div class="stat-card"><strong>03</strong><span>áreas de aprendizaje</span></div>
+      <div class="stat-card"><strong>01</strong><span>actividad interactiva</span></div>
+      <div class="stat-card"><strong>100%</strong><span>enfoque educativo</span></div>
+      <div class="stat-card"><strong>24/7</strong><span>acceso a los recursos</span></div>
     </section>
 
-    <section class="about-section" id="nosotros">
-        <div class="about-content">
-            <span class="eyebrow">ACERCA DE NETSEC LAB</span>
-            <h2>La seguridad comienza con el conocimiento.</h2>
-            <p>
-                NetSec Lab es un proyecto académico enfocado en la
-                concientización sobre ciberseguridad. Su propósito es
-                proporcionar un espacio de aprendizaje donde los usuarios
-                puedan conocer amenazas digitales y desarrollar hábitos
-                responsables al utilizar la tecnología.
-            </p>
-        </div>
+    <section class="learning-section section-shell" id="aprendizaje">
+      <div class="section-intro">
+        <p class="eyebrow">APRENDA A SU RITMO</p>
+        <h2>Explore las áreas de aprendizaje</h2>
+        <p>Desarrolle conocimientos esenciales para reconocer riesgos y tomar mejores decisiones en el entorno digital.</p>
+      </div>
 
-        <div class="about-features">
-            <div class="feature">
-                <span>01</span>
-                <div>
-                    <h3>Aprendizaje</h3>
-                    <p>Comprende los riesgos del entorno digital.</p>
-                </div>
-            </div>
-
-            <div class="feature">
-                <span>02</span>
-                <div>
-                    <h3>Prevención</h3>
-                    <p>Reconoce señales de posibles amenazas.</p>
-                </div>
-            </div>
-
-            <div class="feature">
-                <span>03</span>
-                <div>
-                    <h3>Protección</h3>
-                    <p>Adopta medidas para cuidar tu información.</p>
-                </div>
-            </div>
-        </div>
+      <div class="learning-grid" id="temas">
+        <article class="learning-card" data-search="ciberseguridad amenazas seguridad digital">
+          <div class="card-image card-image-blue"><span class="card-art shield-art">✓</span><span class="card-label">FUNDAMENTOS</span></div>
+          <div class="card-content"><p class="card-kicker">ÁREA 01 · CONCEPTOS</p><h3>Fundamentos de ciberseguridad</h3><p>Conoce los principios básicos de la seguridad digital y las amenazas más comunes.</p><a href="#recursos" class="text-link">Explorar contenido <span>→</span></a></div>
+        </article>
+        <article class="learning-card" data-search="phishing correo electrónico enlaces remitente estafa">
+          <div class="card-image card-image-purple"><span class="card-art mail-art">✉</span><span class="card-label">ACTIVIDAD PRÁCTICA</span></div>
+          <div class="card-content"><p class="card-kicker">ÁREA 02 · CORREO</p><h3>Seguridad del correo electrónico</h3><p>Analiza un mensaje de ejemplo y aprende a reconocer señales de posible fraude.</p><a href="correo.html" class="text-link">Iniciar actividad <span>→</span></a></div>
+        </article>
+        <article class="learning-card" data-search="redes protección datos contraseñas privacidad dispositivos">
+          <div class="card-image card-image-green"><span class="card-art network-art">⌘</span><span class="card-label">BUENAS PRÁCTICAS</span></div>
+          <div class="card-content"><p class="card-kicker">ÁREA 03 · PROTECCIÓN</p><h3>Protección de datos personales</h3><p>Identifica medidas para cuidar tus cuentas, dispositivos y datos personales.</p><a href="#recursos" class="text-link">Explorar contenido <span>→</span></a></div>
+        </article>
+      </div>
+      <p class="search-feedback" id="searchFeedback" aria-live="polite"></p>
     </section>
 
-    <section class="final-banner">
-        <div>
-            <span class="eyebrow">NETSEC LAB</span>
-            <h2>Tu seguridad digital importa.</h2>
-            <p>Aprende, analiza y protege tu información.</p>
+    <section class="topics-band" id="recursos">
+      <div class="topics-inner">
+        <div class="topics-copy"><p class="eyebrow">CONOCIMIENTO QUE TE ACOMPAÑA</p><h2>Aprender hoy es proteger el mañana.</h2><p>La seguridad digital comienza con decisiones informadas. Consulta estas recomendaciones antes de compartir información o abrir enlaces.</p><a class="button button-green" href="correo.html">Practicar análisis de correo</a></div>
+        <div class="resource-list">
+          <article class="resource-item"><span class="resource-number">01</span><div><h3>Verifica antes de confiar</h3><p>Comprueba quién envía el mensaje y revisa cuidadosamente el dominio.</p></div><span class="resource-arrow">↗</span></article>
+          <article class="resource-item"><span class="resource-number">02</span><div><h3>Protege tus accesos</h3><p>Utiliza contraseñas únicas y activa la verificación en dos pasos.</p></div><span class="resource-arrow">↗</span></article>
+          <article class="resource-item"><span class="resource-number">03</span><div><h3>Piensa antes de hacer clic</h3><p>Evita abrir enlaces o archivos inesperados de remitentes desconocidos.</p></div><span class="resource-arrow">↗</span></article>
         </div>
-        <a href="correo.html" class="btn btn-light">Comenzar práctica →</a>
+      </div>
     </section>
 
-</main>
+    <section class="closing-section">
+      <div><p class="eyebrow">TU SIGUIENTE PASO</p><h2>El conocimiento es tu primera línea de defensa.</h2><p>Comienza con una actividad breve para identificar señales de riesgo en un mensaje electrónico.</p></div>
+      <a class="button button-dark" href="correo.html">Comenzar actividad <span>→</span></a>
+    </section>
+  </main>
 
-<footer class="footer">
-    <a href="index.html" class="brand footer-brand">
-        <span class="brand-icon">N</span>
-        <span>NETSEC <small>LAB</small></span>
-    </a>
-    <p>Cybersecurity Awareness | Proyecto académico</p>
-    <small>© <span id="year"></span> NetSec Lab. Todos los derechos reservados.</small>
-</footer>
+  <footer class="site-footer">
+    <a class="academy-brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span class="brand-name">Academia de<br><strong>Seguridad Digital</strong></span></a>
+    <p>Plataforma educativa de concientización en ciberseguridad.</p>
+    <small>© <span id="year"></span> · Material con fines educativos.</small>
+  </footer>
 
-<script src="script.js"></script>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/script.js"></script>
 </body>
 </html>
